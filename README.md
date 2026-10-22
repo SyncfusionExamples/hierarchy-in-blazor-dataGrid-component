@@ -17,27 +17,25 @@ This sample demonstrates how to display hierarchical data using the Syncfusion [
 ## Prerequisites
 
 - Visual Studio 2022 or Visual Studio Code
-- .NET SDK compatible with the project's target framework
+- .NET SDK compatible with the project's target framework (.NET 10)
 
 ## How to Run the Project
 
 **Visual Studio 2022**
 
 1. Clone or download the repository.
-2. Open the solution file `HierarchyGridSample.sln`.
+2. Open the project file `HierarchyGridSample.csproj`.
 3. Restore all NuGet packages.
-4. Set the `Server` project as the startup project if required.
-5. Build the solution.
-6. Run the application using `Ctrl+F5`.
+4. Build the project.
+5. Run the application using `Ctrl+F5`.
 
 **Visual Studio Code**
 
 1. Open the repository folder in Visual Studio Code.
 2. Open the integrated terminal.
-3. Navigate to the Server project directory.
+3. Run the project from the repository root.
 
 ```bash
-cd Server
 dotnet restore
 dotnet run
 ```
@@ -46,14 +44,13 @@ dotnet run
 
 ## Project Structure
 
-- `Client/Pages/Index.razor` — contains the hierarchy grid implementation and parent-child grid configuration.
+- `Pages/Home.razor` — contains the hierarchy grid implementation and parent-child grid configuration.
+- `Models/EmployeeData.cs` — contains the employee data model used by the parent grid.
+- `Layout/` — contains the app layout components (MainLayout, NavMenu).
+- `wwwroot/` — static assets, including the Syncfusion theme and bootstrap styles.
 
 ## Support and Feedback
 
 - For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
 - To report an issue specific to this sample, open a GitHub issue in this repository.
 - For feature documentation, see the Syncfusion Blazor DataGrid Hierarchy Grid documentation: https://help.syncfusion.com/grid-sdk/blazor/data-grid/detail-template
-
-## License
-
-This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
